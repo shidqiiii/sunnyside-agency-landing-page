@@ -1,0 +1,66 @@
+@import "../template/style.scss";
+
+header {
+  background-image: url("../../../public/images/desktop/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  padding: 20px 100px;
+  height: 600px;
+  font-size: 15px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      padding: 10px 0;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+
+      a {
+        margin: 0 25px;
+        text-decoration: none;
+        color: $white;
+        font-family: $font-family-barlow;
+        font-weight: 600;
+        display: flex;
+      }
+
+      .header-left-div {
+        background-color: $white;
+        border-radius: 30px;
+        padding: 10px 0;
+      }
+
+      .header-left-button {
+        font-family: $font-family-fraunces;
+        text-transform: uppercase;
+        color: black;
+      }
+    }
+  }
+
+  .jumbotron {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-size: $body-font-size;
+    text-transform: uppercase;
+
+    h1 {
+      font-family: $font-family-fraunces;
+      letter-spacing: 5px;
+    }
+
+    img {
+      margin: 50px 0;
+      width: 30px;
+    }
+  }
+}

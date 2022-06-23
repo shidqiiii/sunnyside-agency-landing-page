@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+main {
+  display: grid;
+  text-align: center;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 600px;
+  grid-template-areas: "grid1 grid2" "grid3 grid4" "grid5 grid6";
+}
+main .grid {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+main .grid h1 {
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
+  font-size: 50px;
+}
+main .grid p {
+  font-family: "Barlow", sans-serif;
+  color: hsl(213deg, 9%, 39%);
+  font-size: 20px;
+  line-height: 30px;
+}
+main .grid1 {
+  grid-area: grid1;
+  text-align: start;
+}
+main .grid2 {
+  grid-area: grid2;
+  background-image: url("../../../public/images/desktop/image-transform.jpg");
+}
+main .grid3 {
+  grid-area: grid3;
+  background-image: url("../../../public/images/desktop/image-stand-out.jpg");
+}
+main .grid4 {
+  grid-area: grid4;
+  text-align: start;
+}
+main .grid5 {
+  grid-area: grid5;
+  background-image: url("../../../public/images/desktop/image-graphic-design.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 150px;
+}
+main .grid5 p {
+  margin-bottom: 50px;
+}
+main .grid6 {
+  grid-area: grid6;
+  background-image: url("../../../public/images/desktop/image-photography.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 150px;
+}
+main .grid6 p {
+  margin-bottom: 50px;
+}/*# sourceMappingURL=main.css.map */

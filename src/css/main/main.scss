@@ -1,0 +1,78 @@
+@import "../template/style.scss";
+
+@mixin card {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 150px;
+  p {
+    margin-bottom: 50px;
+  }
+}
+
+main {
+  display: grid;
+  text-align: center;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 600px;
+  grid-template-areas:
+    "grid1 grid2"
+    "grid3 grid4"
+    "grid5 grid6";
+
+  .grid {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    h1 {
+      font-family: $font-family-fraunces;
+      color: $very-dark-desaturated-blue;
+      font-size: 50px;
+    }
+
+    p {
+      font-family: $font-family-barlow;
+      color: $very-darkgrayish-blue;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .grid1 {
+    grid-area: grid1;
+    text-align: start;
+  }
+
+  .grid2 {
+    grid-area: grid2;
+    background-image: url("../../../public/images/desktop/image-transform.jpg");
+  }
+
+  .grid3 {
+    grid-area: grid3;
+    background-image: url("../../../public/images/desktop/image-stand-out.jpg");
+  }
+
+  .grid4 {
+    grid-area: grid4;
+    text-align: start;
+  }
+
+  .grid5 {
+    grid-area: grid5;
+    background-image: url("../../../public/images/desktop/image-graphic-design.jpg");
+    @include card;
+  }
+
+  .grid6 {
+    grid-area: grid6;
+    background-image: url("../../../public/images/desktop/image-photography.jpg");
+    @include card;
+  }
+}
